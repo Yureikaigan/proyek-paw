@@ -78,7 +78,7 @@
     }
 
     .button-login:hover {
-        background-color: #ddd; /* Slight gray hover */
+        background-color: #ddd;
     }
 
     .button-register {
@@ -88,7 +88,7 @@
     }
 
     .button-register:hover {
-        background-color: #0056b3; /* Your existing hover color */
+        background-color: #0056b3;
     }
 
   </style>

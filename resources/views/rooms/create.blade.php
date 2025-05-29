@@ -9,23 +9,18 @@
 <body class="bg-gray-900 text-white min-h-screen">
 
 <div class="w-[1080px] h-[1920px] mx-auto bg-gray-700 flex flex-col">
-    <!-- Navbar -->
     <nav class="flex items-center justify-between px-4 py-3 border-b border-gray-700 relative bg-gray-900">
-        <!-- Burger -->
         <div class="w-10 h-10 flex items-center justify-center">
             <a href="{{ route('landingpage') }}" class="text-white text-2xl">&#8592;</a>
         </div>
 
-        <!-- Logo tengah -->
         <div class="absolute left-1/2 transform -translate-x-1/2">
             <img src="{{ asset('images/logosamasama.png') }}" alt="SamaSama Logo" class="h-10">
         </div>
 
-        <!-- Kosong biar balance -->
         <div class="w-10 h-10"></div>
     </nav>
 
-    <!-- Form -->
     <div class="p-6 overflow-y-auto space-y-6">
         <h1 class="text-2xl font-bold">Buat Room Baru</h1>
 

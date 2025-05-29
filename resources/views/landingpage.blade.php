@@ -9,17 +9,13 @@
 
     <body class="bg-gray-900 text-white min-h-screen">
 
-    <!-- Optional wrapper untuk kontrol resolusi 1080x1920 -->
     <div class="w-[1080px] h-[1920px] mx-auto bg-gray-700 flex flex-col">
 
-        <!-- Navbar -->
         <nav class="flex items-center justify-between px-4 py-3 border-b border-gray-700 bg-gray-900">
-            <!-- Logo Tengah (pakai flex-1 dan text-center agar selalu di tengah) -->
             <div class="flex-1 text-center">
                 <img src="{{ asset('images/logosamasama.png') }}" alt="SamaSama Logo" class="h-10 inline-block">
             </div>
 
-            <!-- Profile kanan -->
             <div class="w-10 h-10">
                 <a href="{{ route('profile') }}">
                     <img src="{{ asset('images/profile.png') }}" alt="Profile" class="rounded-full">
@@ -27,7 +23,6 @@
             </div>
         </nav>
 
-        <!-- Section Wrapper -->
         <div class="p-4 space-y-6 pb-24 overflow-y-auto">
             @forelse ($rooms as $category => $roomList)
                 <div>
@@ -60,7 +55,6 @@
         </div>
     </div>
 
-        <!-- Floating Button -->
     <a href="{{ route('rooms.create') }}"
        class="fixed bottom-6 right-6 bg-yellow-500 text-black text-2xl w-14 h-14 flex items-center justify-center rounded-full shadow-lg hover:bg-yellow-600 transition">
         +

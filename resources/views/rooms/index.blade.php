@@ -1,4 +1,3 @@
-<!-- resources/views/rooms/index.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 @extends('layouts.app')

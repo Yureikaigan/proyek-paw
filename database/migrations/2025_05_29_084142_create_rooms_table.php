@@ -11,16 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // database/migrations/xxxx_xx_xx_create_rooms_table.php
         Schema::create('rooms', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->date('date');
             $table->foreignId('google_meet_id')->constrained()->onDelete('cascade');
             $table->timestamps();
-            $table->string('category'); // <--- Tambahkan ini
+            $table->string('category');
         });
-
     }
 
     /**

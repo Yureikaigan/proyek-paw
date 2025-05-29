@@ -18,12 +18,12 @@ Route::get('/', [LandingController::class, 'index'])->name('landingpage');
 
 Route::get('/rooms/create', [RoomController::class, 'create'])->name('rooms.create');
 Route::post('/rooms', [RoomController::class, 'store'])->name('rooms.store');
-Route::get('/rooms', [RoomController::class, 'index'])->name('rooms.index'); // opsional
+Route::get('/rooms', [RoomController::class, 'index'])->name('rooms.index');
 
 Route::get('/', function () {
     return auth()->check()
-        ? redirect('/landing')   // Jika sudah login, arahkan ke landing
-        : view('welcome');       // Jika belum login, tampilkan halaman welcome
+        ? redirect('/landing')
+        : view('welcome');
 })->name('welcome');
 
 Route::get('/landing', [LandingController::class, 'index'])->name('landingpage');

@@ -11,14 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // database/migrations/xxxx_xx_xx_create_google_meets_table.php
         Schema::create('google_meets', function (Blueprint $table) {
             $table->id();
             $table->string('link')->unique();
             $table->boolean('is_occupied')->default(false); // untuk tahu apakah link ini sedang dipakai
             $table->timestamps();
         });
-
     }
 
     /**

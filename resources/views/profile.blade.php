@@ -8,10 +8,8 @@
 </head>
 <body class="bg-gray-900 text-white">
 
-<!-- Wrapper 1080x1920 -->
 <div class="w-[1080px] h-[1920px] mx-auto bg-gray-700 flex flex-col overflow-hidden">
 
-    <!-- Navbar Back Button -->
     <nav class="bg-gray-900 px-6 py-4 flex items-center relative shadow-md">
         <a href="{{ route('welcome') }}">
             <img src="{{ asset('images/arrowback.png') }}" alt="Back" class="h-8 w-8">
@@ -19,7 +17,6 @@
         <h1 class="text-lg font-semibold text-yellow-400 mx-auto">Profil</h1>
     </nav>
 
-    <!-- Profile Content -->
     <div class="flex-grow flex items-center justify-center px-4">
         <div class="bg-gray-800 rounded-2xl shadow-lg p-8 w-full max-w-md border border-yellow-400">
             <div class="space-y-4">
@@ -39,7 +36,6 @@
         </div>
     </div>
 
-    <!-- Logout Button -->
     <form method="POST" action="{{ route('logout') }}" class="text-center mb-12">
         @csrf
         <button type="submit"
