@@ -28,7 +28,6 @@ class RoomController extends Controller
         $startTime = Carbon::now();
         $expiresAt = $startTime->copy()->addHours(2);
 
-        // Ambil link Google Meet yang belum dipakai
         $googleMeet = GoogleMeet::where('is_occupied', false)->inRandomOrder()->first();
 
         if (!$googleMeet) {
@@ -46,7 +45,6 @@ class RoomController extends Controller
             'google_meet_id' => $googleMeet->id,
         ]);
 
-        // Hapus room + tandai link kembali tersedia setelah 2 jam
         dispatch(new ExpireRoom($room->id, $googleMeet->id))->delay(now()->addHours(2));
 
         return redirect()->away($googleMeet->link);
