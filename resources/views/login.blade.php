@@ -43,7 +43,7 @@
         input[type="email"],
         input[type="password"] {
             border: 4px solid #ffc95d;
-            border-radius: 30px; 
+            border-radius: 30px;
             width: 100%;
             padding: 12px 30px;
             box-sizing: border-box;
@@ -181,7 +181,7 @@
         </form>
     </div>
     <a href="{{ route('welcome') }}" class="back-image-link">
-        <img src="{{ asset('images/arrow-back.svg') }}" alt="Back" />
+        <img src="{{ asset('images/arrowback.png') }}" alt="Back" />
     </a>
     <div class="signup-text">
         Don't have an account? <a href="{{ route('register') }}">Sign Up</a>

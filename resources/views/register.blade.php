@@ -37,13 +37,13 @@
             display: block;
             margin-top: 15px;
             margin-bottom: 10px;
-            font-weight: light;
+            font-weight: bold;
         }
         input[type="text"],
         input[type="email"],
         input[type="password"] {
             border: 4px solid #3477ec;
-            border-radius: 30px; 
+            border-radius: 30px;
             width: 100%;
             padding: 12px 30px;
             box-sizing: border-box;
@@ -182,7 +182,7 @@
             @endif
             <button type="submit">Register</button>
             <a href="{{ route('welcome') }}" class="back-image-link">
-                <img src="{{ asset('images/arrow-back.svg') }}" alt="Back" />
+                <img src="{{ asset('images/arrowback.png') }}" alt="Back" />
             </a>
             <div class="singin-text">
                 Already have an account? <a href="{{ route('login') }}">Sign In</a>
